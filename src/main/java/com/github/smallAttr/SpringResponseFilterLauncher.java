@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
  * Date: 2018/12/7 10:56 AM
  */
 @SpringBootApplication
-@ComponentScan({"com.jfilter.components"})
+@ComponentScan({"com.jfilter.components", "com.github.smallAttr"})
 @EnableJsonFilter
 public class SpringResponseFilterLauncher {
 

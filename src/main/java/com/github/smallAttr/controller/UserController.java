@@ -2,6 +2,7 @@ package com.github.smallAttr.controller;
 
 import com.github.smallAttr.domain.User;
 import com.github.smallAttr.facade.UserFacade;
+import com.jfilter.filter.FieldFilterSetting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,6 +19,7 @@ public class UserController {
     private UserFacade userFacade;
 
 
+    @FieldFilterSetting(fields = {"id", "password"})
     @GetMapping(value = "/user/login")
     public User login(@RequestParam("email") String email,
                       @RequestParam("password") String password) {

@@ -44,6 +44,8 @@
             <groupId>com.github.rkonovalov</groupId>
             <artifactId>json-ignore</artifactId>
             <version>1.0.8</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/json-ignore-1.0.8.jar</systemPath>
         </dependency>
 
     </dependencies>

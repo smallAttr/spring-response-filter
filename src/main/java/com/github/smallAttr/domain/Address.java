@@ -1,15 +1,17 @@
 package com.github.smallAttr.domain;
 
-import lombok.Builder;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * Author: chenGang
  * Date: 2018/12/7 10:39 AM
  */
 @Data
-@Builder
-public class Address {
+public class Address implements Serializable {
+
+    private static final long serialVersionUID = 42L;
 
     private Long id;
 
@@ -22,13 +24,15 @@ public class Address {
 
 
     @Data
-    @Builder
-    public static class Street {
+    public static class Street implements Serializable {
+
+        private static final long serialVersionUID = 42L;
+
         private Long id;
 
         private String streetName;
 
-        private String streetNumber;
+        private Integer streetNumber;
     }
 }
 

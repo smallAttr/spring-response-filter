@@ -6,7 +6,7 @@ server:
 
 #日志配置，spring-boot默认使用的Logback
 logging:
-    file: /logs/lucene-search/app.log
+    file: /logs/spring-response-filter/app.log
     file.max-size: 40MB
     file.max-history: 10
     pattern:
@@ -15,7 +15,7 @@ logging:
     level:
         root: INFO
         org.springframework: INFO
-        com.apricotforest: INFO
+        com.github.smallAttr: INFO
 
 spring:
     application:

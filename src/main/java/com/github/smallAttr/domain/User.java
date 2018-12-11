@@ -1,15 +1,17 @@
 package com.github.smallAttr.domain;
 
-import lombok.Builder;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * Author: chenGang
  * Date: 2018/12/7 10:37 AM
  */
 @Data
-@Builder
-public class User {
+public class User implements Serializable {
+
+    private static final long serialVersionUID = 42L;
 
     private Long id;
 
